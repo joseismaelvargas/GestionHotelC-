@@ -140,18 +140,27 @@ Huespedes huesped3 = new Huespedes
 
        
 
-        private void label2_Click( object sender, EventArgs e)
-        {
-            Formgestion formgestion = new Formgestion(huespedesregistrados);
-            
-            formgestion.Show();
-        }
+       
 
         private void label3_Click(object sender, EventArgs e)
         {
+        
+
+        }
+
+     
+        private void button2_Click(object sender, EventArgs e)
+        {   
             Reservas formreserbas = new Reservas(habitaciones, huespedesregistrados,reservas);
             formreserbas.Show();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            Formgestion formgestion = new Formgestion(huespedesregistrados);
+
+            formgestion.Show();
         }
     }
 } 
